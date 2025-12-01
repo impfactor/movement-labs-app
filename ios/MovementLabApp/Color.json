@@ -1,0 +1,28 @@
+{
+  "colors": [
+    {
+      "name": "AccentStart",
+      "color": {
+        "color-space": "srgb",
+        "components": {
+          "red": 0.15,
+          "green": 0.45,
+          "blue": 1.0,
+          "alpha": 1.0
+        }
+      }
+    },
+    {
+      "name": "AccentEnd",
+      "color": {
+        "color-space": "srgb",
+        "components": {
+          "red": 0.38,
+          "green": 0.13,
+          "blue": 1.0,
+          "alpha": 1.0
+        }
+      }
+    }
+  ]
+}
