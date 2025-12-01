@@ -22,8 +22,8 @@ jobs:
             -archivePath build/MovementLabApp.xcarchive \
             -configuration Release \
             clean archive \
-            CODE_SIGNING_ALLOWED=NO
-            swift_version=5.0
+            CODE_SIGNING_ALLOWED=NO \
+            SWIFT_VERSION=5.0
 
       - name: Export IPA
         run: |
