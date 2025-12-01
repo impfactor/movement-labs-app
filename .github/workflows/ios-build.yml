@@ -1,0 +1,28 @@
+name: Build iOS App
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Select Xcode version
+      run: sudo xcode-select -switch /Applications/Xcode.app
+
+    - name: Build for iOS Simulator
+      run: |
+        cd ios/MovementLabApp
+        xcodebuild \
+          -scheme MovementLabApp \
+          -destination 'platform=iOS Simulator,name=iPhone 15 Pro' \
+          clean build \
+          CODE_SIGNING_ALLOWED=NO
+
+
