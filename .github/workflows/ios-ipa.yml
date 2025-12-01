@@ -1,0 +1,41 @@
+name: Build IPA (Unsigned)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Select Xcode version
+      run: sudo xcode-select -switch /Applications/Xcode.app
+
+    - name: Build Archive
+      run: |
+        cd ios/MovementLabApp
+        xcodebuild \
+          -scheme MovementLabApp \
+          -archivePath build/MovementLabApp.xcarchive \
+          -configuration Release \
+          clean archive \
+          CODE_SIGNING_ALLOWED=NO
+
+    - name: Export IPA
+      run: |
+        cd ios/MovementLabApp
+        mkdir -p build/export
+        xcodebuild \
+          -exportArchive \
+          -archivePath build/MovementLabApp.xcarchive \
+          -exportPath build/export \
+          -exportOptionsPlist ../../ExportOptions-unsigned.plist
+
+    - name: Upload IPA
+      uses: actions/upload-artifact@v3
+      with:
+        name: MovementLabApp-IPA
+        path: ios/MovementLabApp/build/export/*.ipa
