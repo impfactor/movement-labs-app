@@ -1,0 +1,155 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 55;
+  objects = {
+
+/* Begin PBXFileReference section */
+    1F0000010000000000000001 /* MovementLabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovementLabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+    1F0000020000000000000001 /* MovementLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementLabApp.swift; sourceTree = "<group>"; };
+    1F0000030000000000000001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+    1F0000100000000000000001 = {
+      isa = PBXGroup;
+      children = (
+        1F0000200000000000000001 /* MovementLabApp */,
+        1F0000110000000000000001 /* Products */,
+      );
+      sourceTree = "<group>";
+    };
+    1F0000110000000000000001 /* Products */ = {
+      isa = PBXGroup;
+      children = (
+        1F0000010000000000000001 /* MovementLabApp.app */,
+      );
+      name = Products;
+      sourceTree = "<group>";
+    };
+    1F0000200000000000000001 /* MovementLabApp */ = {
+      isa = PBXGroup;
+      children = (
+        1F0000020000000000000001 /* MovementLabApp.swift */,
+        1F0000030000000000000001 /* HomeView.swift */,
+      );
+      path = MovementLabApp;
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+    1F0000300000000000000001 /* MovementLabApp */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1F0000600000000000000001 /* Build configuration list for PBXNativeTarget "MovementLabApp" */;
+      buildPhases = (
+      );
+      buildRules = (
+      );
+      dependencies = (
+      );
+      name = MovementLabApp;
+      productName = MovementLabApp;
+      productReference = 1F0000010000000000000001 /* MovementLabApp.app */;
+      productType = "com.apple.product-type.application";
+    };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+    1F0000400000000000000001 /* Project object */ = {
+      isa = PBXProject;
+      attributes = {
+        LastUpgradeCheck = 1600;
+        TargetAttributes = {
+          1F0000300000000000000001 = {
+            CreatedOnToolsVersion = 16.0;
+          };
+        };
+      };
+      buildConfigurationList = 1F0000500000000000000001 /* Build configuration list for PBXProject "MovementLabApp" */;
+      compatibilityVersion = "Xcode 15.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+      );
+      mainGroup = 1F0000100000000000000001;
+      productRefGroup = 1F0000110000000000000001 /* Products */;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        1F0000300000000000000001 /* MovementLabApp */,
+      );
+    };
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+    1F0000510000000000000001 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Debug;
+    };
+    1F0000520000000000000001 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Release;
+    };
+    1F0000610000000000000001 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_BUNDLE_IDENTIFIER = "com.example.MovementLabApp";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Debug;
+    };
+    1F0000620000000000000001 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_BUNDLE_IDENTIFIER = "com.example.MovementLabApp";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Release;
+    };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+    1F0000500000000000000001 /* Build configuration list for PBXProject "MovementLabApp" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1F0000510000000000000001 /* Debug */,
+        1F0000520000000000000001 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    1F0000600000000000000001 /* Build configuration list for PBXNativeTarget "MovementLabApp" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1F0000610000000000000001 /* Debug */,
+        1F0000620000000000000001 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+/* End XCConfigurationList section */
+
+  };
+  rootObject = 1F0000400000000000000001 /* Project object */;
+}
