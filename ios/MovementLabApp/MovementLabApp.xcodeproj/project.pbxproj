@@ -134,6 +134,7 @@
         SDKROOT = iphoneos;
         SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
         TARGETED_DEVICE_FAMILY = "1,2";
+        SWIFT_VERSION = 5.0;
         GENERATE_INFOPLIST_FILE = YES;
         INFOPLIST_KEY_UIMainStoryboardFile = "";
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -152,6 +153,7 @@
         SDKROOT = iphoneos;
         SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
         TARGETED_DEVICE_FAMILY = "1,2";
+        SWIFT_VERSION = 5.0;
         GENERATE_INFOPLIST_FILE = YES;
         INFOPLIST_KEY_UIMainStoryboardFile = "";
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
