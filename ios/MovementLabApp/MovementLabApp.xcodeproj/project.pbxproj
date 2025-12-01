@@ -5,10 +5,15 @@
   objectVersion = 55;
   objects = {
 
+/* Begin PBXBuildFile section */
+    1F0001000000000000000001 /* MovementLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0002000000000000000001 /* MovementLabApp.swift */; };
+    1F0001000000000000000002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0002000000000000000002 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
     1F0000010000000000000001 /* MovementLabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovementLabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-    1F0000020000000000000001 /* MovementLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementLabApp.swift; sourceTree = "<group>"; };
-    1F0000030000000000000001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+    1F0002000000000000000001 /* MovementLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementLabApp.swift; sourceTree = "<group>"; };
+    1F0002000000000000000002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -31,8 +36,8 @@
     1F0000200000000000000001 /* MovementLabApp */ = {
       isa = PBXGroup;
       children = (
-        1F0000020000000000000001 /* MovementLabApp.swift */,
-        1F0000030000000000000001 /* HomeView.swift */,
+        1F0002000000000000000001 /* MovementLabApp.swift */,
+        1F0002000000000000000002 /* HomeView.swift */,
       );
       path = MovementLabApp;
       sourceTree = "<group>";
@@ -44,6 +49,7 @@
       isa = PBXNativeTarget;
       buildConfigurationList = 1F0000600000000000000001 /* Build configuration list for PBXNativeTarget "MovementLabApp" */;
       buildPhases = (
+        1F0000700000000000000001 /* Sources */,
       );
       buildRules = (
       );
@@ -60,7 +66,7 @@
     1F0000400000000000000001 /* Project object */ = {
       isa = PBXProject;
       attributes = {
-        LastUpgradeCheck = 1600;
+        LastUpgradeCheck = 1630;
         TargetAttributes = {
           1F0000300000000000000001 = {
             CreatedOnToolsVersion = 16.0;
@@ -84,13 +90,26 @@
     };
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+    1F0000700000000000000001 /* Sources */ = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        1F0001000000000000000001 /* MovementLabApp.swift in Sources */,
+        1F0001000000000000000002 /* HomeView.swift in Sources */,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXSourcesBuildPhase section */
+
 /* Begin XCBuildConfiguration section */
     1F0000510000000000000001 /* Debug */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        SWIFT_VERSION = 5.0;
         IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
         TARGETED_DEVICE_FAMILY = "1,2";
       };
       name = Debug;
@@ -98,9 +117,10 @@
     1F0000520000000000000001 /* Release */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        SWIFT_VERSION = 5.0;
         IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
         TARGETED_DEVICE_FAMILY = "1,2";
       };
       name = Release;
@@ -108,22 +128,36 @@
     1F0000610000000000000001 /* Debug */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
-        PRODUCT_BUNDLE_IDENTIFIER = "com.example.MovementLabApp";
+        PRODUCT_BUNDLE_IDENTIFIER = "com.impfactor.movementlab";
         PRODUCT_NAME = "$(TARGET_NAME)";
-        SWIFT_VERSION = 5.0;
         IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
         TARGETED_DEVICE_FAMILY = "1,2";
+        GENERATE_INFOPLIST_FILE = YES;
+        INFOPLIST_KEY_UIMainStoryboardFile = "";
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
       };
       name = Debug;
     };
     1F0000620000000000000001 /* Release */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
-        PRODUCT_BUNDLE_IDENTIFIER = "com.example.MovementLabApp";
+        PRODUCT_BUNDLE_IDENTIFIER = "com.impfactor.movementlab";
         PRODUCT_NAME = "$(TARGET_NAME)";
-        SWIFT_VERSION = 5.0;
         IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
         TARGETED_DEVICE_FAMILY = "1,2";
+        GENERATE_INFOPLIST_FILE = YES;
+        INFOPLIST_KEY_UIMainStoryboardFile = "";
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
       };
       name = Release;
     };
