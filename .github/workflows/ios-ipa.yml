@@ -23,6 +23,7 @@ jobs:
             -configuration Release \
             clean archive \
             CODE_SIGNING_ALLOWED=NO
+            swift_version=5.0
 
       - name: Export IPA
         run: |
